@@ -1,0 +1,645 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+@font-face {
+font-family: 'proxima_nova_altbold';
+src: url('../font/proxima_nova_alt_bold-webfont.woff2') format('woff2'),
+url('../font/proxima_nova_alt_bold-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'proxima_nova_altlight';
+src: url('../font/proxima_nova_alt_light-webfont.woff2') format('woff2'),
+url('../font/proxima_nova_alt_light-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'proxima_nova_altthin';
+src: url('../font/proxima_nova_alt_thin-webfont.woff2') format('woff2'),
+url('../font/proxima_nova_alt_thin-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'proxima_novablack';
+src: url('../font/proxima_nova_black-webfont.woff2') format('woff2'),
+url('../font/proxima_nova_black-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'proxima_novabold';
+src: url('../font/proxima_nova_bold-webfont.woff2') format('woff2'),
+url('../font/proxima_nova_bold-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'proxima_novaextrabold';
+src: url('../font/proxima_nova_extrabold-webfont.woff2') format('woff2'),
+url('../font/proxima_nova_extrabold-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'proxima_novaregular';
+src: url('../font/proximanova-regular-webfont.woff2') format('woff2'),
+url('../font/proximanova-regular-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'proxima_novasemibold';
+src: url('../font/Mark\ Simonson\ -\ Proxima\ Nova\ Semibold-webfont.ttf') format('woff2'),
+url('../font/Mark\ Simonson\ -\ Proxima\ Nova\ Semibold-webfont.ttf') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+margin: 0 0;
+padding: 0 0;
+box-sizing: border-box;
+font-family: 'proxima_novaregular';
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+}
+
+*{
+margin: 0 0;
+padding: 0 0;
+box-sizing: border-box;
+}
+
+a{
+text-decoration: none;
+}
+
+a:hover{
+text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+margin: 0 0 ;
+padding: 0 0;
+}
+
+ul{
+list-style: none;
+margin: 0 0;
+}
+
+/*==============	Common Css Start	===================*/
+
+#toastContainer {
+position: fixed;
+top: 100px; /* Adjust this value based on your menu height */
+right: 30px;
+z-index: 1000;
+margin-top: 20px; /* Margin from the menu */
+}
+
+.toast {
+    position: relative;
+    max-width: 350px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.bg-success {
+    background-color: #28a745;
+}
+
+.bg-info {
+    background-color: #17a2b8;
+}
+
+.bg-warning {
+    background-color: #ffc107;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+}
+
+.form-group .select2-selection--single {
+    height: 40px; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+
+    outline: none;
+    box-shadow: none;
+    border: 0.5px solid #A1ABB5;
+    border-radius: 24px;
+    padding: 14px 20px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #141414;
+    font-family: 'proxima_novasemibold';
+    font-weight: 600;
+    transition: all 0.5s ease;
+    background-color: #FFFFFF;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 7px;
+    right: 10px;
+}
+
+.form-group .select2-selection__rendered {
+    line-height: 38px; /* Adjust this value to match the height for proper vertical alignment */
+}
+
+.form-group .select2-selection__arrow {
+    height: 38px; /* Adjust this value to match the height for proper vertical alignment */
+}
+
+.wrapper-main{
+margin: 25px 0;
+}
+.custome-container{
+width: 100%;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+.page-title h1{
+font-size: 28px;
+line-height: 30px;
+color: #141414;
+font-family: 'proxima_novabold';
+font-weight: 700;
+margin-bottom: 30px;
+}
+.page-inner{
+width: 100%;
+padding: 30px 40px;
+background: #FFFFFF;
+border: 1px solid #68768F1A;
+border-radius: 20px;
+}
+
+.page-inner .form-group{
+margin-bottom: 24px;
+}
+
+.mark-main label.checkbox{
+display: inline-block;
+position: relative;
+padding-left: 30px;
+margin: 0;
+cursor: pointer;
+min-height: 20px;
+font-size: 14px;
+color: #141414;
+font-family: 'proxima_novaregular';
+font-weight: 400;
+
+}
+
+.mark-main label.checkbox input {
+position: absolute;
+top: -4px;
+left: 0;
+opacity: 0;
+cursor: pointer;
+width:24px;
+height: 24px;
+margin: 0 !important;
+
+}
+.mark-main label.checkbox .checkmark{
+position: absolute;
+top: 42%;
+transform: translateY(-50%);
+left: 0;
+height: 24px;
+width: 24px;
+border: 1px solid #A1ABB5;
+border-radius: 8px;
+transition:all 0.5s ease 0s;
+-webkit-border-radius: 8px;
+-webkit-transition:all 0.5s ease 0s;
+}
+.mark-main label.checkbox .checkmark:after{
+content:"";
+position:absolute;
+opacity:0;
+left:5px;
+top:6px;
+width:12px;
+height:7px;
+margin:auto;
+border-left:2px solid #fff;
+border-bottom:2px solid #fff;
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+transition:all 0.5s ease 0s;
+-webkit-transition:all 0.5s ease 0s;
+}
+.mark-main label.checkbox input:checked ~ .checkmark:after{
+opacity: 1;
+}
+.mark-main .checkbox input:checked ~ .checkmark{
+background:#286090;
+border-color:#286090;
+}
+.form-input .input-label{
+font-size: 14px;
+line-height: 17px;
+color: #141414;
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+margin-bottom: 6px;
+text-transform: capitalize;
+}
+
+.form-input .form-control{
+outline: none;
+box-shadow: none;
+border: 0.5px solid #A1ABB5;
+border-radius: 24px;
+padding: 14px 20px;
+margin-bottom: 3px;
+font-size: 14px;
+line-height: 18px;
+color: #141414;
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+transition: all 0.5s ease;
+background-color: #FFFFFF;
+}
+.form-input .form-control:focus{
+outline: none;
+box-shadow: none;
+border: 0.5px solid #286090;
+background-color: #FBFBFB;
+}
+.form-input textarea.form-control {
+height: 70px;
+}
+.form-input input::-webkit-input-placeholder{color: #929292;transition: all 0.5s ease;}
+.form-input input::-moz-placeholder{color: #929292;transition: all 0.5s ease;}
+.form-input input:-ms-input-placeholder{color: #929292;transition: all 0.5s ease;}
+.form-input input:-moz-placeholder{color: #929292;transition: all 0.5s ease;}
+
+.form-input input:focus::-webkit-input-placeholder{color: #141414;}
+.form-input input:focus::-moz-placeholder{color: #141414;}
+.form-input input:focus:-ms-input-placeholder{color: #141414;}
+.form-input input:focus:-moz-placeholder{color: #141414;}
+
+.form-input textarea::-webkit-input-placeholder{color: #929292;transition: all 0.5s ease;}
+.form-input textarea::-moz-placeholder{color: #929292;transition: all 0.5s ease;}
+.form-input textarea:-ms-input-placeholder{color: #929292;transition: all 0.5s ease;}
+.form-input textarea:-moz-placeholder{color: #929292;transition: all 0.5s ease;}
+
+.form-input textarea:focus::-webkit-input-placeholder{color: #141414;}
+.form-input textarea:focus::-moz-placeholder{color: #141414;}
+.form-input textarea:focus:-ms-input-placeholder{color: #141414;}
+.form-input textarea:focus:-moz-placeholder{color: #141414;}
+
+.form-input .error-msg{
+font-size: 12px;
+line-height: 15px;
+color: #B9B9B9;
+font-family: 'proxima_novaregular';
+font-weight: 400;
+
+}
+.form-group .error-message{
+font-size: 12px;
+line-height: 14px;
+color: red;
+font-family: 'proxima_novaregular';
+font-weight: 400;
+}
+
+.custom-select {
+position: relative;
+height: inherit;
+padding: inherit;
+line-height: inherit;
+color: inherit;
+background: inherit;
+background-size: inherit;
+border: none;
+margin-right: 0;
+padding: 0;
+}
+
+.custom-select select {
+display: none;
+}
+
+.custom-select .select-selected:after {
+position: absolute;
+font-family: "Font Awesome 6 Free";
+content: "\f107";
+font-weight: 700;
+top: 50%;
+transform: translateY(-50%);
+right: 18px;
+font-size: 14px;
+line-height: 18px;
+color: #000000;
+transition: all 0.4s ease;
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-ms-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+}
+
+.custom-select .select-selected.select-arrow-active:after {
+transform:translateY(-50%) rotate(180deg);
+}
+
+.custom-select .select-selected {
+color: #323B4B;
+padding: 14px 20px;
+border: 0.5px solid #286090;
+border-radius: 24px;
+font-size: 14px;
+line-height: 18px;
+cursor: pointer;
+user-select: none;
+position: relative;
+width: 100%;
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+transition: all 0.5s ease;
+background: #FBFBFB;
+}
+
+.custom-select .select-items {
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+box-shadow: 0px 5px 20px #0000001A;
+margin-top: 5px;
+overflow: hidden;
+background-color: #fff;
+border-radius: 15px;
+padding: 0 20px;
+}
+
+.custom-select .select-items div{
+color: #141414;
+padding: 12px 0px;
+cursor: pointer;
+user-select: none;
+font-size: 14px;
+line-height: 15px;
+border-bottom: 1px solid #EFEFEF;
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+}
+
+.custom-select .select-items div:last-child{
+border-bottom: none;
+}
+
+.custom-select .select-hide {
+display: none;
+}
+
+.submit-button{
+max-width: 277px;
+width: 100%;
+margin: 0 auto;
+border: none;
+outline: none;
+box-shadow: 0px 3px 30px #0000000F;
+border-radius: 26px;
+background: #286090;
+color: #FFFFFF;
+padding: 15px;
+text-align: center;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+}
+
+.submit-button i.fa-solid.fa-arrow-right-long{
+font-size: 17px;
+line-height: 16px;
+color: #ffffff;
+opacity: 0;
+transition: all 0.5s ease;
+}
+
+.submit-button:hover i.fa-solid.fa-arrow-right-long{
+padding-left: 12px;
+opacity: 1;
+color: #ffffff;
+}
+.submit-button:hover{
+color: #ffffff;
+}
+
+.submit-button:focus{
+outline: none;
+border: none;
+}
+
+.page-title.add-user h1{
+margin-bottom: 20px;
+}
+
+ul.breadcrumbs{
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+
+ul.breadcrumbs li{
+font-size: 16px;
+line-height: 19px;
+color: #141414;
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+}
+
+ul.breadcrumbs li a{
+position: relative;
+padding-right: 18px;
+color: rgb(20 20 20 / 40%);
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+}
+ul.breadcrumbs li a::before{
+font-family: "Font Awesome 6 Free";
+content: "\f101";
+font-weight: 700;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: 4px;
+font-size: 11px;
+}
+.view-inner .row .col-12:nth-child(odd){
+border-right: 1px solid rgb(0 0 0 / 10%);
+
+}
+.view-inner .row .col-12:nth-child(even){
+padding-left: 50px;
+}
+
+.view-user .custome-container{
+max-width: 530px;
+width: 100%;
+margin: 0 auto;
+
+}
+.view-inner .form-group{
+margin-bottom: 26px;
+}
+.view-inner .row:last-child{
+margin-top: 30px;
+}
+.view-inner .row.last-row .form-group{
+margin-bottom: 0;
+}
+.view-inner .row:last-child .col-12 {
+border-right: inherit;
+}
+
+
+.view-inner .view-label{
+font-size: 14px;
+line-height: 17px;
+color: rgb(20 20 20 / 50%);
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+margin-bottom: 6px;
+}
+.view-inner .view-data{
+font-size: 14px;
+line-height: 17px;
+color: #141414;
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+}
+
+/*==============	Modal Popup 	================*/
+
+.delete-popup .modal-content{
+max-width: 480px;
+width: 100%;
+margin: 0 auto;
+background: #FFFFFF;
+border-radius: 20px;
+position: relative;
+padding: 40px;
+}
+
+
+.delete-popup button.close{
+width: 27px;
+height: 27px;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top:20px;
+right: 20px;
+z-index: 9;
+opacity: 1;
+border: none;
+outline: none;
+}
+.delete-popup button.close:hover{
+opacity: 1;
+}
+.delete-popup button.close span{
+line-height: 0;
+}
+.delete-popup .modal-body{
+text-align: center;
+padding: 0px;
+}
+.delete-img{
+width: 130px;
+height: 130px;
+margin: 0 auto 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 3px solid #F5687333;
+border-radius: 100%;
+
+}
+
+.delete-img img{
+height: auto;
+width: auto;
+max-width: 100%;
+}
+
+.delete-popup .modal-body h3{
+font-size: 22px;
+line-height: 30px;
+color: #141414;
+font-family: 'proxima_novabold';
+font-weight: 700;
+margin-bottom: 15px;
+}
+
+.delete-popup .modal-body .sort-msg{
+font-size: 16px;
+line-height: 20px;
+color: rgb(20 20 20 / 40%);
+max-width: 310px;
+width: 100%;
+margin: 0 auto;
+font-family: 'proxima_novaregular';
+font-weight: 400;
+}
+
+.delete-popup .modal-footer{
+border-top: none;
+justify-content:space-between;
+padding:0;
+padding-top:35px;
+}
+.delete-popup .modal-footer button.btn, .delete-popup .modal-footer a.btn{
+max-width: 180px;
+width: 100%;
+border-radius: 26px;
+box-shadow: 0px 3px 30px #0000000F;
+font-family: 'proxima_novasemibold';
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+padding: 14px 7px;
+color: #ffffff;
+}
+.delete-popup .modal-footer button.btn.cancel{
+background-color: #A8A8A8;
+}
+.delete-popup .modal-footer a.btn.delete{
+background-color: #F56873;
+}

@@ -1,0 +1,145 @@
+/*  1920 Strat   */
+@media only screen and (max-width:1920px){
+
+}
+
+/*  1600 Strat   */
+@media only screen and (max-width:1600px){
+
+}
+
+/*  1440 Strat   */
+@media only screen and (max-width:1440px){
+
+}
+
+/*  1024 Strat   */
+@media only screen and (max-width:1024px){
+
+}
+
+/*  991 Strat   */
+@media only screen and (max-width:991px){
+
+}
+
+/*  767 Strat   */
+@media only screen and (max-width:767px){
+.page-title h1{
+font-size: 24px;
+line-height: 26px;
+margin-bottom: 20px;
+}
+.page-title.add-user h1 {
+margin-bottom: 14px;
+}
+ul.breadcrumbs {
+margin-bottom: 10px;
+}
+.submit-button i.fa-solid.fa-arrow-right-long{
+opacity: 1;
+padding-left: 12px;
+}
+}
+
+/*  586 Strat   */
+@media only screen and (max-width:575px){
+.page-title h1 {
+font-size: 20px;
+line-height: 22px;
+margin-bottom: 14px;
+}
+.page-title.add-user h1 {
+margin-bottom: 8px;
+}
+ul.breadcrumbs li {
+font-size: 14px;
+line-height: 16px;
+}
+.page-inner{
+padding: 20px 20px ;
+}
+.page-inner .form-group{
+margin-bottom: 16px;
+}
+.delete-popup button.close {
+top: 12px;
+right: 16px;
+}
+.delete-popup .modal-content {
+padding: 20px;
+}
+.delete-popup .modal-footer{
+display: block;
+padding-top: 20px;
+}
+.delete-popup .modal-footer button.btn, .delete-popup .modal-footer a.btn{
+max-width: 100%;
+}
+.delete-popup .modal-footer button.btn.cancel{
+margin-right: 0;
+margin-bottom: 16px;
+}
+.delete-popup .modal-footer a.btn.delete{
+margin-left: 0;
+}
+.delete-img {
+width: 100px;
+height: 100px;
+margin: 0 auto 20px;
+border: 2px solid #F5687333;
+}
+.delete-popup .modal-body h3 {
+margin-bottom: 10px;
+font-size: 20px;
+line-height: 26px;
+}
+.delete-popup .modal-body .sort-msg {
+font-size: 14px;
+line-height: 18px;
+}
+.view-inner .form-group {
+margin-bottom: 0px;
+padding: 10px 0;
+border-bottom:1px solid #68768F1A;
+}
+.view-inner .row .col-12:nth-child(even){
+padding-left: 15px;
+}
+.view-inner .row .col-12:nth-child(odd){
+border-right: inherit;
+}
+.submit-button{
+padding: 12px;
+font-size: 14px;
+line-height: 18px;
+}
+.form-input .form-control {
+border-radius: 10px;
+padding: 10px 12px;
+}
+.custom-select .select-selected {
+border-radius: 10px;
+padding: 10px 12px;
+}
+.custom-select .select-selected:after{
+right: 12px;
+}
+}
+
+/*  480 Strat   */
+@media only screen and (max-width:480px){
+
+}
+
+/*  392 Strat  */
+@media only screen and (max-width:392px){
+.checkit .mark-main label.checkbox .checkmark{
+top: 0;
+transform: translateY(0);
+}
+}
+/*  360 Strat   */
+@media only screen and (max-width:360px){
+
+}
